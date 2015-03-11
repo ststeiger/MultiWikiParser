@@ -1,0 +1,931 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"  />
+	 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	 <meta charset="UTF-8" /> 
+	<title>MediaWiki Test</title>
+</head>
+<body>
+	<div class='doc'>
+<p>&lt;languages /&gt;
+{{TNT|PD Help Page}}
+&lt;translate&gt;
+&lt;!--<a href='T:1--'>T:1--</a>&gt;
+You can format your text by using wiki markup. This consists of normal characters like asterisks, apostrophes or equal signs which have a special function in the wiki, sometimes depending on their position. For example, to format a word in <em>italic</em>, you include it in two pairs of apostrophes like </p>
+<pre>''this''&#x3c;/nowiki&#x3e;&#x3c;/code&#x3e;.
+
+== Text formatting markup == &#x3c;!--T:2--&#x3e;
+&#x3c;/translate&#x3e;
+{| class="wikitable"
+! &#x3c;translate&#x3e;&#x3c;!--T:3--&#x3e;
+Description&#x3c;/translate&#x3e;
+! width=40% | &#x3c;translate&#x3e;&#x3c;!--T:4--&#x3e;
+You type&#x3c;/translate&#x3e;
+! width=40% | &#x3c;translate&#x3e;&#x3c;!--T:5--&#x3e;
+You get&#x3c;/translate&#x3e;
+|-
+! colspan="3" style="background: #ABE" | &#x3c;translate&#x3e;&#x3c;!--T:6--&#x3e;
+Character (inline) formatting – ''applies anywhere''&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:7--&#x3e;
+Italic text&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+''&#x3c;translate&#x3e;&#x3c;!--T:8--&#x3e;
+italic&#x3c;/translate&#x3e;''
+&#x3c;/pre&#x3e;
+|
+''&#x3c;translate&#x3e;&#x3c;!--T:9--&#x3e;
+italic&#x3c;/translate&#x3e;''
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:10--&#x3e;
+Bold text&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+'''&#x3c;translate&#x3e;&#x3c;!--T:11--&#x3e;
+bold&#x3c;/translate&#x3e;'''
+&#x3c;/pre&#x3e;
+|
+'''&#x3c;translate&#x3e;&#x3c;!--T:12--&#x3e;
+bold&#x3c;/translate&#x3e;'''
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:13--&#x3e;
+Bold and italic&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+'''''&#x3c;translate&#x3e;&#x3c;!--T:14--&#x3e;
+bold &#x26; italic&#x3c;/translate&#x3e;'''''
+&#x3c;/pre&#x3e;
+|
+'''''&#x3c;translate&#x3e;&#x3c;!--T:15--&#x3e;
+bold &#x26; italic&#x3c;/translate&#x3e;'''''
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:16--&#x3e;
+Strike text&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;strike&#x3e; &#x3c;translate&#x3e;&#x3c;!--T:17--&#x3e;
+strike text&#x3c;/translate&#x3e; &#x3c;/strike&#x3e;
+&#x3c;/pre&#x3e;
+|&#x3c;strike&#x3e; &#x3c;translate&#x3e;&#x3c;!--T:18--&#x3e;
+strike text&#x3c;/translate&#x3e; &#x3c;/strike&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:19--&#x3e;
+Escape wiki markup&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x26;lt;nowiki&#x26;gt;&#x3c;translate&#x3e;&#x3c;!--T:20--&#x3e;
+no ''markup''&#x3c;/translate&#x3e;&#x26;lt;/nowiki&#x26;gt;
+&#x3c;/pre&#x3e;
+|
+&#x3c;translate&#x3e;&#x3c;!--T:155--&#x3e;
+&#x3c;nowiki&#x3e;no ''markup''&#x3c;/nowiki&#x3e;&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:21--&#x3e;
+Escape wiki markup once&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+[[Special:MyLanguage/API:Main page|API]]&#x26;lt;nowiki/&#x3e;&#x26;nbsp;&#x3c;translate&#x3e;&#x3c;!--T:22--&#x3e;
+extension&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+|
+[[Special:MyLanguage/API:Main page|API]]&#x3c;nowiki/&#x3e;&#x26;nbsp;&#x3c;translate&#x3e;&#x3c;!--T:23--&#x3e;
+extension&#x3c;/translate&#x3e;
+|-
+! colspan="3" style="background: #ABE" | &#x3c;translate&#x3e;&#x3c;!--T:24--&#x3e;
+Section formatting – ''only at the beginning of the line''&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:25--&#x3e;
+Headings of different levels&#x3c;/translate&#x3e; 
+| &#x3c;pre&#x3e;
+&#x3c;translate&#x3e;
+== Level 2 == &#x3c;!--T:26--&#x3e;
+
+=== Level 3 === &#x3c;!--T:27--&#x3e;
+
+==== Level 4 ==== &#x3c;!--T:28--&#x3e;
+
+===== Level 5 ===== &#x3c;!--T:29--&#x3e;
+
+====== Level 6 ====== &#x3c;!--T:30--&#x3e;
+&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+----
+{{note|
+* &#x3c;translate&#x3e;&#x3c;!--T:31--&#x3e;
+[[&#x3c;tvar|lv1&#x3e;Special:MyLanguage/Help_talk:Formatting#Level_1&#x3c;/&#x3e;|Skip Level 1]], it is page name level.&#x3c;/translate&#x3e;
+* &#x3c;translate&#x3e;&#x3c;!--T:33--&#x3e;
+An article with 4 or more headings automatically creates a [[wikipedia:Wikipedia:Section#Table of contents (TOC)|table of contents]].&#x3c;/translate&#x3e;
+}}
+|
+&#x3c;!-- using HTML markup to avoid creating new sections --&#x3e;
+&#x3c;translate&#x3e;
+&#x3c;!--T:35--&#x3e;
+&#x3c;h2&#x3e;Level 2&#x3c;/h2&#x3e;
+
+&#x3c;!--T:36--&#x3e;
+&#x3c;h3&#x3e;Level 3&#x3c;/h3&#x3e;
+
+&#x3c;!--T:37--&#x3e;
+&#x3c;h4&#x3e;Level 4&#x3c;/h4&#x3e;
+
+&#x3c;!--T:38--&#x3e;
+&#x3c;h5&#x3e;Level 5&#x3c;/h5&#x3e;
+
+&#x3c;!--T:39--&#x3e;
+&#x3c;h6&#x3e;Level 6&#x3c;/h6&#x3e;
+&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:40--&#x3e;
+Horizontal rule&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;translate&#x3e;&#x3c;!--T:41--&#x3e;
+Text before&#x3c;/translate&#x3e;
+----
+&#x3c;translate&#x3e;&#x3c;!--T:42--&#x3e;
+Text after&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+|
+&#x3c;translate&#x3e;&#x3c;!--T:43--&#x3e;
+Text before&#x3c;/translate&#x3e;
+----
+&#x3c;translate&#x3e;&#x3c;!--T:44--&#x3e;
+Text after&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:45--&#x3e;
+Bullet list&#x3c;/translate&#x3e;
+|
+&#x3c;pre&#x3e;
+&#x3c;translate&#x3e;
+&#x3c;!--T:46--&#x3e;
+* Start each line
+* with an [[Wikipedia:asterisk|asterisk]] (*).
+** More asterisks give deeper
+*** and deeper levels.
+* Line breaks &#x3c;br /&#x3e;don't break levels.
+*** But jumping levels creates empty space.
+Any other start ends the list.
+&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+|
+&#x3c;translate&#x3e;
+&#x3c;!--T:47--&#x3e;
+* Start each line
+* with an [[Wikipedia:asterisk|asterisk]] (*).
+** More asterisks give deeper
+*** and deeper levels.
+* Line breaks &#x3c;br /&#x3e;don't break levels.
+*** But jumping levels creates empty space.
+Any other start ends the list.
+&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:48--&#x3e;
+Numbered list&#x3c;/translate&#x3e;
+|
+&#x3c;pre&#x3e;
+&#x3c;translate&#x3e;
+&#x3c;!--T:49--&#x3e;
+# Start each line
+# with a [[Wikipedia:Number_sign|number sign]] (#).
+## More number signs give deeper
+### and deeper
+### levels.
+# Line breaks &#x3c;br /&#x3e;don't break levels.
+### But jumping levels creates empty space.
+# Blank lines
+
+&#x3c;!--T:50--&#x3e;
+# end the list and start another.
+Any other start also
+ends the list.
+&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+|
+&#x3c;translate&#x3e;
+&#x3c;!--T:51--&#x3e;
+# Start each line
+# with a [[Wikipedia:Number_sign|number sign]] (#).
+## More number signs give deeper
+### and deeper
+### levels.
+# Line breaks &#x3c;br /&#x3e;don't break levels.
+### But jumping levels creates empty space.
+# Blank lines
+
+&#x3c;!--T:52--&#x3e;
+# end the list and start another.
+Any other start also
+ends the list.
+&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:53--&#x3e;
+Definition list&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;translate&#x3e;
+&#x3c;!--T:54--&#x3e;
+;item 1
+: definition 1
+;item 2
+: definition 2-1
+: definition 2-2
+&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+|
+&#x3c;translate&#x3e;
+&#x3c;!--T:55--&#x3e;
+;item 1
+: definition 1
+;item 2
+: definition 2-1
+: definition 2-2
+&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:56--&#x3e;
+Indent text&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;translate&#x3e;
+&#x3c;!--T:57--&#x3e;
+: Single indent
+:: Double indent
+::::: Multiple indent
+&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+----
+{{Note|&#x3c;translate&#x3e;&#x3c;!--T:58--&#x3e;
+This workaround may harm accessibility.&#x3c;/translate&#x3e;}}
+|
+&#x3c;translate&#x3e;
+&#x3c;!--T:59--&#x3e;
+: Single indent
+:: Double indent
+::::: Multiple indent
+&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:60--&#x3e;
+Mixture of different types of list&#x3c;/translate&#x3e;
+|
+&#x3c;pre&#x3e;
+&#x3c;translate&#x3e;
+&#x3c;!--T:61--&#x3e;
+# one
+# two
+#* two point one
+#* two point two
+# three
+#; three item one
+#: three def one
+# four
+#: four def one
+#: this looks like a continuation
+#: and is often used
+#: instead &#x3c;br /&#x3e;of &#x26;lt;nowiki&#x3e;&#x3c;br /&#x3e;&#x26;lt;/nowiki&#x3e;
+# five
+## five sub 1
+### five sub 1 sub 1
+## five sub 2
+&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+----
+{{note|&#x3c;translate&#x3e;&#x3c;!--T:62--&#x3e;
+The usage of &#x3c;code&#x3e;#:&#x3c;/code&#x3e; and &#x3c;code&#x3e;*:&#x3c;/code&#x3e; for breaking a line within an item may also harm accessibility.&#x3c;/translate&#x3e;}}
+|
+&#x3c;translate&#x3e;
+&#x3c;!--T:63--&#x3e;
+# one
+# two
+#* two point one
+#* two point two
+# three
+#; three item one
+#: three def one
+# four
+#: four def one
+#: this looks like a continuation
+#: and is often used
+#: instead &#x3c;br /&#x3e;of &#x3c;nowiki&#x3e;&#x3c;br /&#x3e;&#x3c;/nowiki&#x3e;
+# five
+## five sub 1
+### five sub 1 sub 1
+## five sub 2{{anchor|pre}}
+&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:64--&#x3e;
+Preformatted text&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;translate&#x3e;
+ &#x3c;!--T:65--&#x3e;
+Start each line with a space.
+ Text is '''preformatted''' and
+ ''markups'' '''''can''''' be done.
+&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+----
+{{note|&#x3c;translate&#x3e;&#x3c;!--T:66--&#x3e;
+This way of preformatting only applies to section formatting. Character formatting markups are still effective.&#x3c;/translate&#x3e;}}
+|
+&#x3c;translate&#x3e;
+ &#x3c;!--T:67--&#x3e;
+Start each line with a space.
+ Text is '''preformatted''' and
+ ''markups'' '''''can''''' be done.
+&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:68--&#x3e;
+Preformatted text blocks&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e; &#x3c;translate&#x3e;&#x3c;!--T:69--&#x3e;
+&#x3c;nowiki&#x3e;&#x3c;nowiki&#x3e;Start with a space in the first column,
+(before the &#x3c;nowiki&#x3e;).
+
+&#x3c;!--T:70--&#x3e;
+Then your block format will be
+    maintained.
+ 
+This is good for copying in code blocks:
+
+&#x3c;!--T:71--&#x3e;
+def function():
+    """documentation string"""
+
+    &#x3c;!--T:72--&#x3e;
+if True:
+        print True
+    else:
+        print False&#x3c;/nowiki&#x3e;&#x3c;/nowiki&#x3e;&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+|
+ &#x3c;translate&#x3e;&#x3c;!--T:73--&#x3e;
+&#x3c;nowiki&#x3e;Start with a space in the first column,
+(before the &#x3c;nowiki&#x3e;).
+
+&#x3c;!--T:74--&#x3e;
+Then your block format will be
+    maintained.
+
+&#x3c;!--T:75--&#x3e;
+This is good for copying in code blocks:
+
+&#x3c;!--T:76--&#x3e;
+def function():
+    """documentation string"""
+
+    &#x3c;!--T:77--&#x3e;
+if True:
+        print True
+    else:
+        print False&#x3c;/nowiki&#x3e;&#x3c;/translate&#x3e;
+|}
+&#x3c;translate&#x3e;
+== Paragraphs == &#x3c;!--T:78--&#x3e;
+
+&#x3c;!--T:79--&#x3e;
+MediaWiki ignores single line breaks. To start a new paragraph, leave an empty line. You can force a line break within a paragraph with the HTML tag &#x3c;code&#x3e;&#x26;lt;br /&#x3e;&#x3c;/code&#x3e;.
+
+== HTML tags == &#x3c;!--T:80--&#x3e;
+
+&#x3c;!--T:81--&#x3e;
+Some [[wikipedia:HTML|HTML]] tags are allowed in MediaWiki, for example &#x3c;code&#x3e;&#x26;lt;code&#x3e;&#x3c;/code&#x3e;, &#x3c;code&#x3e;&#x26;lt;div&#x3e;&#x3c;/code&#x3e;, &#x3c;code&#x3e;&#x3c;nowiki&#x3e;&#x3c;span&#x3e;&#x3c;/nowiki&#x3e;&#x3c;/code&#x3e; and &#x3c;code&#x3e;&#x3c;nowiki&#x3e;&#x3c;font&#x3e;&#x3c;/nowiki&#x3e;&#x3c;/code&#x3e;. These apply anywhere you insert them.
+&#x3c;/translate&#x3e;
+{| class="wikitable"
+! &#x3c;translate&#x3e;&#x3c;!--T:82--&#x3e;
+Description&#x3c;/translate&#x3e;
+! width=40% | &#x3c;translate&#x3e;&#x3c;!--T:83--&#x3e;
+You type&#x3c;/translate&#x3e;
+! width=40% | &#x3c;translate&#x3e;&#x3c;!--T:84--&#x3e;
+You get&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:85--&#x3e;
+Inserted &#x3c;br /&#x3e;(Displays as underline in most browsers)&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;ins&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:86--&#x3e;
+Inserted&#x3c;/translate&#x3e;&#x3c;/ins&#x3e;
+
+&#x3c;translate&#x3e;&#x3c;!--T:87--&#x3e;
+or&#x3c;/translate&#x3e;
+
+&#x3c;u&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:88--&#x3e;
+Underline&#x3c;/translate&#x3e;&#x3c;/u&#x3e;
+&#x3c;/pre&#x3e;
+|
+&#x3c;ins&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:89--&#x3e;
+Inserted&#x3c;/translate&#x3e;&#x3c;/ins&#x3e;
+
+&#x3c;translate&#x3e;&#x3c;!--T:90--&#x3e;
+or&#x3c;/translate&#x3e;
+
+&#x3c;u&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:91--&#x3e;
+Underline&#x3c;/translate&#x3e;&#x3c;/u&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:92--&#x3e;
+Deleted &#x3c;br /&#x3e;(Displays as strikethrough in most browsers)&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;s&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:93--&#x3e;
+Struck out&#x3c;/translate&#x3e;&#x3c;/s&#x3e;
+
+&#x3c;translate&#x3e;&#x3c;!--T:94--&#x3e;
+or&#x3c;/translate&#x3e;
+
+&#x3c;del&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:95--&#x3e;
+Deleted&#x3c;/translate&#x3e;&#x3c;/del&#x3e;
+
+&#x3c;/pre&#x3e;
+|
+&#x3c;s&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:96--&#x3e;
+Struck out&#x3c;/translate&#x3e;&#x3c;/s&#x3e;
+
+&#x3c;translate&#x3e;&#x3c;!--T:97--&#x3e;
+or&#x3c;/translate&#x3e;
+
+&#x3c;del&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:98--&#x3e;
+Deleted&#x3c;/translate&#x3e;&#x3c;/del&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:99--&#x3e;
+Fixed width text&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;code&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:100--&#x3e;
+Source code&#x3c;/translate&#x3e;&#x3c;/code&#x3e;
+
+&#x3c;translate&#x3e;&#x3c;!--T:101--&#x3e;
+or&#x3c;/translate&#x3e;
+
+&#x3c;tt&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:157--&#x3e;
+Fixed width text&#x3c;/translate&#x3e;&#x3c;/tt&#x3e;
+&#x3c;/pre&#x3e;
+|
+&#x3c;code&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:154--&#x3e;
+Source code&#x3c;/translate&#x3e;&#x3c;/code&#x3e;
+
+&#x3c;translate&#x3e;&#x3c;!--T:102--&#x3e;
+or&#x3c;/translate&#x3e;
+
+&#x3c;tt&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:103--&#x3e;
+Fixed width text&#x3c;/translate&#x3e;&#x3c;/tt&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:104--&#x3e;
+Blockquotes&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;translate&#x3e;&#x3c;!--T:105--&#x3e;
+Text before&#x3c;/translate&#x3e;
+&#x3c;blockquote&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:106--&#x3e;
+Blockquote&#x3c;/translate&#x3e;&#x3c;/blockquote&#x3e;
+&#x3c;translate&#x3e;&#x3c;!--T:107--&#x3e;
+Text after&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+|
+&#x3c;translate&#x3e;&#x3c;!--T:108--&#x3e;
+Text before&#x3c;/translate&#x3e;
+&#x3c;blockquote&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:109--&#x3e;
+Blockquote&#x3c;/translate&#x3e;&#x3c;/blockquote&#x3e;
+&#x3c;translate&#x3e;&#x3c;!--T:110--&#x3e;
+Text after&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:111--&#x3e;
+Comment&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;&#x3c;translate&#x3e;
+&#x3c;!--T:112--&#x3e;
+&#x3c;!-- This is a comment --&#x3e;
+Comments are visible only 
+in the edit zone.
+&#x3c;/translate&#x3e;&#x3c;/pre&#x3e;
+|
+&#x3c;translate&#x3e;
+&#x3c;!--T:113--&#x3e;
+&#x3c;!-- This is a comment --&#x3e;
+Comments are visible only 
+in the edit zone.
+&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:114--&#x3e;
+Completely preformatted text&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;pre&#x3e;&#x3c;translate&#x3e;
+&#x3c;!--T:115--&#x3e;
+Text is '''preformatted''' and 
+''markups'' '''''cannot''''' be done&#x26;lt;/pre&#x3e;
+&#x3c;/translate&#x3e;&#x3c;/pre&#x3e;
+----
+{{note|&#x3c;translate&#x3e;&#x3c;!--T:116--&#x3e;
+For marking up of preformatted text, check the "Preformatted text" entry at the end of the previous table.&#x3c;/translate&#x3e;}} 
+|
+&#x3c;pre&#x3e;&#x3c;translate&#x3e;
+&#x3c;!--T:117--&#x3e;
+Text is '''preformatted''' and 
+''markups'' '''''cannot''''' be done
+&#x3c;/translate&#x3e;&#x3c;/pre&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:118--&#x3e;
+'''Customized''' preformatted text&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;pre style="color: red"&#x3e;&#x3c;translate&#x3e;
+&#x3c;!--T:119--&#x3e;
+Text is '''preformatted''' 
+with a style and 
+''markups'' '''''cannot''''' be done
+&#x26;lt;/pre&#x3e;
+&#x3c;/translate&#x3e;&#x3c;/pre&#x3e;
+----
+{{note|&#x3c;translate&#x3e;&#x3c;!--T:120--&#x3e;
+A CSS style can be named within the &#x3c;code&#x3e;style&#x3c;/code&#x3e; property.&#x3c;/translate&#x3e;}}
+|
+&#x3c;pre style="color: red"&#x3e;&#x3c;translate&#x3e;
+&#x3c;!--T:121--&#x3e;
+Text is '''preformatted''' 
+with a style and 
+''markups'' '''''cannot''''' be done
+&#x3c;/translate&#x3e;&#x3c;/pre&#x3e;
+|}
+&#x3c;translate&#x3e;
+&#x3c;!--T:122--&#x3e;
+continued:&#x3c;/translate&#x3e;
+{| class="wikitable"
+! &#x3c;translate&#x3e;&#x3c;!--T:123--&#x3e;
+Description&#x3c;/translate&#x3e;
+! width=40% | &#x3c;translate&#x3e;&#x3c;!--T:124--&#x3e;
+You type&#x3c;/translate&#x3e;
+! width=40% | &#x3c;translate&#x3e;&#x3c;!--T:125--&#x3e;
+You get&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:126--&#x3e;
+'''Customized''' preformatted text with text wrap according to available width&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;"&#x3e;
+&#x3c;translate&#x3e;&#x3c;!--T:127--&#x3e;
+This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer.&#x3c;/translate&#x3e;
+&#x26;lt;/pre&#x3e;
+&#x3c;/pre&#x3e;
+|
+&#x3c;pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;"&#x3e;
+&#x3c;translate&#x3e;&#x3c;!--T:128--&#x3e;
+This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer.&#x3c;/translate&#x3e;
+&#x3c;/pre&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:129--&#x3e;
+Preformatted text with text wrap according to available width&#x3c;/translate&#x3e;
+| &#x3c;pre&#x3e;
+&#x3c;code&#x3e;
+&#x3c;translate&#x3e;&#x3c;!--T:130--&#x3e;
+This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer.&#x3c;/translate&#x3e;
+&#x3c;/code&#x3e;
+&#x3c;/pre&#x3e;
+| &#x3c;code&#x3e;
+&#x3c;translate&#x3e;&#x3c;!--T:131--&#x3e;
+This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer.&#x3c;/translate&#x3e;
+&#x3c;/code&#x3e;
+|}
+&#x3c;translate&#x3e;
+== Inserting symbols == &#x3c;!--T:132--&#x3e;
+
+&#x3c;!--T:133--&#x3e;
+Symbols and other special characters not available on your keyboard can be inserted through a special sequence of characters. Those sequences are called HTML entities. For example, the following sequence (entity) '''&#x26;amp;rarr;''' when inserted will be shown as &#x3c;ins&#x3e;right arrow&#x3c;/ins&#x3e; HTML symbol &#x26;rarr; and '''&#x26;amp;mdash;''' when inserted will be shown as an &#x3c;ins&#x3e;em dash&#x3c;/ins&#x3e; HTML symbol &#x26;mdash;. &#x3c;/translate&#x3e;
+----
+{{note|&#x3c;translate&#x3e;&#x3c;!--T:134--&#x3e;
+Hover over any character to find out the symbol that it produces.  Some symbols not available in the current font will appear as empty squares.&#x3c;/translate&#x3e;}} 
+
+{| class="wikitable" align=center width=100%
+! colspan=32 | HTML symbol entities
+|- align=center
+| '''&#x3c;span title="&#x26;amp;Aacute;"&#x3e;&#x26;Aacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;aacute;"&#x3e;&#x26;aacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Acirc;"&#x3e;&#x26;Acirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;acirc;"&#x3e;&#x26;acirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;acute;"&#x3e;&#x26;acute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;AElig;"&#x3e;&#x26;AElig;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;aelig;"&#x3e;&#x26;aelig;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Agrave;"&#x3e;&#x26;Agrave;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;agrave;"&#x3e;&#x26;agrave;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;alefsym;"&#x3e;&#x26;alefsym;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Alpha;"&#x3e;&#x26;Alpha;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;alpha;"&#x3e;&#x26;alpha;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;amp;"&#x3e;&#x26;amp;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;and;"&#x3e;&#x26;and;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ang;"&#x3e;&#x26;ang;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Aring;"&#x3e;&#x26;Aring;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;aring;"&#x3e;&#x26;aring;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;asymp;"&#x3e;&#x26;asymp;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Atilde;"&#x3e;&#x26;Atilde;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;atilde;"&#x3e;&#x26;atilde;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Auml;"&#x3e;&#x26;Auml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;auml;"&#x3e;&#x26;auml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;bdquo;"&#x3e;&#x26;bdquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Beta;"&#x3e;&#x26;Beta;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;beta;"&#x3e;&#x26;beta;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;brvbar;"&#x3e;&#x26;brvbar;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;bull;"&#x3e;&#x26;bull;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;cap;"&#x3e;&#x26;cap;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Ccedil;"&#x3e;&#x26;Ccedil;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ccedil;"&#x3e;&#x26;ccedil;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;cedil;"&#x3e;&#x26;cedil;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;cent;"&#x3e;&#x26;cent;&#x3c;/span&#x3e;
+|- align=center
+| '''&#x3c;span title="&#x26;amp;Chi;"&#x3e;&#x26;Chi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;chi;"&#x3e;&#x26;chi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;circ;"&#x3e;&#x26;circ;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;clubs;"&#x3e;&#x26;clubs;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;cong;"&#x3e;&#x26;cong;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;copy;"&#x3e;&#x26;copy;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;crarr;"&#x3e;&#x26;crarr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;cup;"&#x3e;&#x26;cup;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;curren;"&#x3e;&#x26;curren;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;dagger;"&#x3e;&#x26;dagger;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Dagger;"&#x3e;&#x26;Dagger;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;darr;"&#x3e;&#x26;darr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;dArr;"&#x3e;&#x26;dArr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;deg;"&#x3e;&#x26;deg;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Delta;"&#x3e;&#x26;Delta;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;delta;"&#x3e;&#x26;delta;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;diams;"&#x3e;&#x26;diams;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;divide;"&#x3e;&#x26;divide;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Eacute;"&#x3e;&#x26;Eacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;eacute;"&#x3e;&#x26;eacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Ecirc;"&#x3e;&#x26;Ecirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ecirc;"&#x3e;&#x26;ecirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Egrave;"&#x3e;&#x26;Egrave;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;egrave;"&#x3e;&#x26;egrave;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;empty;"&#x3e;&#x26;empty;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;emsp;"&#x3e;&#x26;emsp;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ensp;"&#x3e;&#x26;ensp;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Epsilon;"&#x3e;&#x26;Epsilon;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;epsilon;"&#x3e;&#x26;epsilon;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;equiv;"&#x3e;&#x26;equiv;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Eta;"&#x3e;&#x26;Eta;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;eta;"&#x3e;&#x26;eta;&#x3c;/span&#x3e;
+|- align=center
+| '''&#x3c;span title="&#x26;amp;ETH;"&#x3e;&#x26;ETH;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;eth;"&#x3e;&#x26;eth;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Euml;"&#x3e;&#x26;Euml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;euml;"&#x3e;&#x26;euml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;euro;"&#x3e;&#x26;euro;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;exist;"&#x3e;&#x26;exist;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;fnof;"&#x3e;&#x26;fnof;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;forall;"&#x3e;&#x26;forall;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;frac12;"&#x3e;&#x26;frac12;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;frac14;"&#x3e;&#x26;frac14;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;frac34;"&#x3e;&#x26;frac34;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;frasl;"&#x3e;&#x26;frasl;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Gamma;"&#x3e;&#x26;Gamma;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;gamma;"&#x3e;&#x26;gamma;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ge;"&#x3e;&#x26;ge;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;gt;"&#x3e;&#x26;gt;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;harr;"&#x3e;&#x26;harr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;hArr;"&#x3e;&#x26;hArr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;hearts;"&#x3e;&#x26;hearts;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;hellip;"&#x3e;&#x26;hellip;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Iacute;"&#x3e;&#x26;Iacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;iacute;"&#x3e;&#x26;iacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Icirc;"&#x3e;&#x26;Icirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;icirc;"&#x3e;&#x26;icirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;iexcl;"&#x3e;&#x26;iexcl;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Igrave;"&#x3e;&#x26;Igrave;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;igrave;"&#x3e;&#x26;igrave;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;image;"&#x3e;&#x26;image;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;infin;"&#x3e;&#x26;infin;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;int;"&#x3e;&#x26;int;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Iota;"&#x3e;&#x26;Iota;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;iota;"&#x3e;&#x26;iota;&#x3c;/span&#x3e;
+|- align=center
+| '''&#x3c;span title="&#x26;amp;iquest;"&#x3e;&#x26;iquest;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;isin;"&#x3e;&#x26;isin;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Iuml;"&#x3e;&#x26;Iuml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;iuml;"&#x3e;&#x26;iuml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Kappa;"&#x3e;&#x26;Kappa;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;kappa;"&#x3e;&#x26;kappa;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Lambda;"&#x3e;&#x26;Lambda;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lambda;"&#x3e;&#x26;lambda;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lang;"&#x3e;&#x26;lang;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;laquo;"&#x3e;&#x26;laquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;larr;"&#x3e;&#x26;larr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lArr;"&#x3e;&#x26;lArr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lceil;"&#x3e;&#x26;lceil;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ldquo;"&#x3e;&#x26;ldquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;le;"&#x3e;&#x26;le;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lfloor;"&#x3e;&#x26;lfloor;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lowast;"&#x3e;&#x26;lowast;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;loz;"&#x3e;&#x26;loz;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lrm;"&#x3e;&#x26;lrm;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lsaquo;"&#x3e;&#x26;lsaquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lsquo;"&#x3e;&#x26;lsquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;lt;"&#x3e;&#x26;lt;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;macr;"&#x3e;&#x26;macr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;mdash;"&#x3e;&#x26;mdash;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;micro;"&#x3e;&#x26;micro;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;middot;"&#x3e;&#x26;middot;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;minus;"&#x3e;&#x26;minus;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Mu;"&#x3e;&#x26;Mu;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;mu;"&#x3e;&#x26;mu;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;nabla;"&#x3e;&#x26;nabla;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;nbsp;"&#x3e;&#x26;nbsp;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ndash;"&#x3e;&#x26;ndash;&#x3c;/span&#x3e;
+|- align=center
+| '''&#x3c;span title="&#x26;amp;ne;"&#x3e;&#x26;ne;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ni;"&#x3e;&#x26;ni;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;not;"&#x3e;&#x26;not;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;notin;"&#x3e;&#x26;notin;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;nsub;"&#x3e;&#x26;nsub;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Ntilde;"&#x3e;&#x26;Ntilde;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ntilde;"&#x3e;&#x26;ntilde;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Nu;"&#x3e;&#x26;Nu;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;nu;"&#x3e;&#x26;nu;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Oacute;"&#x3e;&#x26;Oacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;oacute;"&#x3e;&#x26;oacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Ocirc;"&#x3e;&#x26;Ocirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ocirc;"&#x3e;&#x26;ocirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;OElig;"&#x3e;&#x26;OElig;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;oelig;"&#x3e;&#x26;oelig;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Ograve;"&#x3e;&#x26;Ograve;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ograve;"&#x3e;&#x26;ograve;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;oline;"&#x3e;&#x26;oline;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Omega;"&#x3e;&#x26;Omega;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;omega;"&#x3e;&#x26;omega;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Omicron;"&#x3e;&#x26;Omicron;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;omicron;"&#x3e;&#x26;omicron;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;oplus;"&#x3e;&#x26;oplus;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;or;"&#x3e;&#x26;or;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ordf;"&#x3e;&#x26;ordf;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ordm;"&#x3e;&#x26;ordm;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Oslash;"&#x3e;&#x26;Oslash;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;oslash;"&#x3e;&#x26;oslash;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Otilde;"&#x3e;&#x26;Otilde;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;otilde;"&#x3e;&#x26;otilde;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;otimes;"&#x3e;&#x26;otimes;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Ouml;"&#x3e;&#x26;Ouml;&#x3c;/span&#x3e;
+|- align=center
+| '''&#x3c;span title="&#x26;amp;ouml;"&#x3e;&#x26;ouml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;para;"&#x3e;&#x26;para;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;part;"&#x3e;&#x26;part;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;permil;"&#x3e;&#x26;permil;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;perp;"&#x3e;&#x26;perp;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Phi;"&#x3e;&#x26;Phi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;phi;"&#x3e;&#x26;phi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Pi;"&#x3e;&#x26;Pi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;pi;"&#x3e;&#x26;pi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;piv;"&#x3e;&#x26;piv;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;plusmn;"&#x3e;&#x26;plusmn;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;pound;"&#x3e;&#x26;pound;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;prime;"&#x3e;&#x26;prime;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Prime;"&#x3e;&#x26;Prime;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;prod;"&#x3e;&#x26;prod;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;prop;"&#x3e;&#x26;prop;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Psi;"&#x3e;&#x26;Psi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;psi;"&#x3e;&#x26;psi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;quot;"&#x3e;&#x26;quot;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;radic;"&#x3e;&#x26;radic;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;rang;"&#x3e;&#x26;rang;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;raquo;"&#x3e;&#x26;raquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;rarr;"&#x3e;&#x26;rarr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;rArr;"&#x3e;&#x26;rArr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;rceil;"&#x3e;&#x26;rceil;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;rdquo;"&#x3e;&#x26;rdquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;real;"&#x3e;&#x26;real;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;reg;"&#x3e;&#x26;reg;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;rfloor;"&#x3e;&#x26;rfloor;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Rho;"&#x3e;&#x26;Rho;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;rho;"&#x3e;&#x26;rho;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;rlm;"&#x3e;&#x26;rlm;&#x3c;/span&#x3e;
+|- align=center
+| '''&#x3c;span title="&#x26;amp;rsaquo;"&#x3e;&#x26;rsaquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;rsquo;"&#x3e;&#x26;rsquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sbquo;"&#x3e;&#x26;sbquo;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Scaron;"&#x3e;&#x26;Scaron;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;scaron;"&#x3e;&#x26;scaron;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sdot;"&#x3e;&#x26;sdot;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sect;"&#x3e;&#x26;sect;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;shy;"&#x3e;&#x26;shy;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Sigma;"&#x3e;&#x26;Sigma;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sigma;"&#x3e;&#x26;sigma;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sigmaf;"&#x3e;&#x26;sigmaf;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sim;"&#x3e;&#x26;sim;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;spades;"&#x3e;&#x26;spades;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sub;"&#x3e;&#x26;sub;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sube;"&#x3e;&#x26;sube;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sum;"&#x3e;&#x26;sum;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sup;"&#x3e;&#x26;sup;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sup1;"&#x3e;&#x26;sup1;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sup2;"&#x3e;&#x26;sup2;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;sup3;"&#x3e;&#x26;sup3;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;supe;"&#x3e;&#x26;supe;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;szlig;"&#x3e;&#x26;szlig;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Tau;"&#x3e;&#x26;Tau;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;tau;"&#x3e;&#x26;tau;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;there4;"&#x3e;&#x26;there4;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Theta;"&#x3e;&#x26;Theta;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;theta;"&#x3e;&#x26;theta;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;thetasym;"&#x3e;&#x26;thetasym;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;thinsp;"&#x3e;&#x26;thinsp;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;THORN;"&#x3e;&#x26;THORN;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;thorn;"&#x3e;&#x26;thorn;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;tilde;"&#x3e;&#x26;tilde;&#x3c;/span&#x3e;
+|- align=center
+| '''&#x3c;span title="&#x26;amp;times;"&#x3e;&#x26;times;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;trade;"&#x3e;&#x26;trade;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Uacute;"&#x3e;&#x26;Uacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;uacute;"&#x3e;&#x26;uacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;uarr;"&#x3e;&#x26;uarr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;uArr;"&#x3e;&#x26;uArr;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Ucirc;"&#x3e;&#x26;Ucirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ucirc;"&#x3e;&#x26;ucirc;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Ugrave;"&#x3e;&#x26;Ugrave;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;ugrave;"&#x3e;&#x26;ugrave;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;uml;"&#x3e;&#x26;uml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;upsih;"&#x3e;&#x26;upsih;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Upsilon;"&#x3e;&#x26;Upsilon;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;upsilon;"&#x3e;&#x26;upsilon;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Uuml;"&#x3e;&#x26;Uuml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;uuml;"&#x3e;&#x26;uuml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;weierp;"&#x3e;&#x26;weierp;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Xi;"&#x3e;&#x26;Xi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;xi;"&#x3e;&#x26;xi;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Yacute;"&#x3e;&#x26;Yacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;yacute;"&#x3e;&#x26;yacute;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;yen;"&#x3e;&#x26;yen;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;yuml;"&#x3e;&#x26;yuml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Yuml;"&#x3e;&#x26;Yuml;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;Zeta;"&#x3e;&#x26;Zeta;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;zeta;"&#x3e;&#x26;zeta;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;zwj;"&#x3e;&#x26;zwj;&#x3c;/span&#x3e;
+| '''&#x3c;span title="&#x26;amp;zwnj;"&#x3e;&#x26;zwnj;&#x3c;/span&#x3e;'''
+|}
+
+{| class="wikitable"
+! &#x3c;translate&#x3e;&#x3c;!--T:135--&#x3e;
+Description&#x3c;/translate&#x3e;
+! width=40% | &#x3c;translate&#x3e;&#x3c;!--T:136--&#x3e;
+You type&#x3c;/translate&#x3e;
+! width=40% | &#x3c;translate&#x3e;&#x3c;!--T:137--&#x3e;
+You get&#x3c;/translate&#x3e;
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:138--&#x3e;
+Copyright symbol&#x3c;/translate&#x3e;
+| &#x3c;tt&#x3e;&#x3c;pre&#x3e;
+&#x26;amp;copy;
+&#x3c;/pre&#x3e;&#x3c;/tt&#x3e;
+|
+:::'''&#x26;copy;'''
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:139--&#x3e;
+Greek delta letter symbol&#x3c;/translate&#x3e;
+| &#x3c;tt&#x3e;&#x3c;pre&#x3e;
+&#x26;amp;delta;
+&#x3c;/pre&#x3e;&#x3c;/tt&#x3e;
+|
+:::'''&#x26;delta;'''
+|-
+| &#x3c;translate&#x3e;&#x3c;!--T:140--&#x3e;
+Euro currency symbol&#x3c;/translate&#x3e;
+| &#x3c;tt&#x3e;&#x3c;pre&#x3e;
+&#x26;amp;euro;
+&#x3c;/pre&#x3e;&#x3c;/tt&#x3e;
+|
+:::'''&#x26;euro;'''
+|}
+&#x3c;translate&#x3e;
+&#x3c;!--T:141--&#x3e;
+See the list of all HTML entities on the Wikipedia article [[wikipedia:List of HTML entities|List of HTML entities]]. Additionally, MediaWiki supports two non-standard entity reference sequences: &#x3c;code&#x3e;&#x26;amp;רלמ;&#x3c;/code&#x3e; and &#x3c;code&#x3e;&#x26;amp;رلم;&#x3c;/code&#x3e; which are both considered equivalent to &#x3c;code&#x3e;&#x26;amp;rlm;&#x3c;/code&#x3e; which is a [[wikipedia:Right-to-left mark|right-to-left mark]]. (Used when combining right to left languages with left to right languages in the same page.)
+
+== HTML tags and symbol entities displayed themselves (with and without interpreting them) == &#x3c;!--T:142--&#x3e;
+&#x3c;/translate&#x3e;
+:&#x3c;tt&#x3e;&#x26;amp;amp;euro;&#x3c;/tt&#x3e; &#x26;nbsp;&#x26;rarr; '''&#x26;amp;euro;'''
+
+:&#x3c;tt&#x3e;&#x26;lt;span style="color: red; text-decoration: line-through;"&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:143--&#x3e;
+Typo to be corrected&#x3c;/translate&#x3e;&#x26;lt;/span&#x3e;&#x3c;/tt&#x3e; &#x26;nbsp;&#x26;rarr; '''&#x3c;span style="color: red; text-decoration: line-through;"&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:144--&#x3e;
+Typo to be corrected&#x3c;/translate&#x3e;&#x3c;/span&#x3e;'''
+
+:&#x3c;tt&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:156--&#x3e;
+&#x3c;nowiki&#x3e;&#x26;amp;lt;span style="color: red; text-decoration: line-through;"&#x3e;Typo to be corrected&#x3c;/span&#x3e;&#x3c;/nowiki&#x3e;&#x3c;/translate&#x3e;&#x3c;/tt&#x3e; &#x26;nbsp;&#x26;rarr; '''&#x26;lt;span style="color: red; text-decoration: line-through;"&#x3e;&#x3c;translate&#x3e;&#x3c;!--T:145--&#x3e;
+Typo to be corrected&#x3c;/translate&#x3e;&#x26;lt;/span&#x3e;'''
+&#x3c;translate&#x3e;
+=== Nowiki for HTML === &#x3c;!--T:146--&#x3e;
+&#x3c;/translate&#x3e;
+&#x3c;&#x3c;nowiki /&#x3e;nowiki /&#x3e; &#x3c;translate&#x3e;&#x3c;!--T:147--&#x3e;
+can prohibit (HTML) tags:&#x3c;/translate&#x3e;
+* &#x3c;nowiki&#x3e;&#x3c;&#x3c;</pre>
+<p>nowiki /&gt;pre&gt; &amp;nbsp;&amp;rarr; &lt;&lt;nowiki/&gt;pre&gt;
+&lt;translate&gt;&lt;!--<a href='T:148--'>T:148--</a>&gt;
+But <em>not</em> &amp;amp; symbol escapes:&lt;/translate&gt;</p>
+<ul>
+  <li>&amp;&lt;&lt;nowiki /&gt;nowiki /&gt;amp; &amp;nbsp;&amp;rarr; &amp;amp;
+&lt;translate&gt;&lt;!--<a href='T:149--'>T:149--</a>&gt;
+To print &amp;amp; symbol escapes as text, use "<tt>&amp;amp;amp;</tt>" to replace the "&amp;" character (eg. type "<tt>&amp;amp;amp;nbsp;</tt>", which results in "<tt>&amp;amp;nbsp;</tt>").</li>
+</ul>
+<h2>Other formatting  &lt;!--<a href='T:150--'>T:150--</a>&gt; </h2>
+<p>&lt;!--<a href='T:151--'>T:151--</a>&gt;
+Beyond the text formatting markup shown hereinbefore, here are some other formatting references:
+&lt;/translate&gt;</p>
+<ul>
+  <li>{{ll|<a href='Help:Links'>Help:Links</a>|nsp=0}}
+&lt;translate&gt;
+&lt;!--<a href='T:152--'>T:152--</a>&gt;</li>
+  <li><a href='&#x3c;tvar|lists&#x3e;Special:MyLanguage/Help:Lists&#x3c;/&#x3e;|Lists'>&#x3c;tvar|lists&#x3e;Special:MyLanguage/Help:Lists&#x3c;/&#x3e;|Lists</a></li>
+  <li><a href='&#x3c;tvar|images&#x3e;Special:MyLanguage/Help:Images&#x3c;/&#x3e;|Images'>&#x3c;tvar|images&#x3e;Special:MyLanguage/Help:Images&#x3c;/&#x3e;|Images</a></li>
+  <li>References - see <a href='&#x3c;tvar|citephp&#x3e;Special:MyLanguage/Extension:Cite/Cite.php&#x3c;/&#x3e;|Extension:Cite/Cite.php'>&#x3c;tvar|citephp&#x3e;Special:MyLanguage/Extension:Cite/Cite.php&#x3c;/&#x3e;|Extension:Cite/Cite.php</a></li>
+  <li><a href='&#x3c;tvar|tables&#x3e;Special:MyLanguage/Help:Tables&#x3c;/&#x3e;|Tables'>&#x3c;tvar|tables&#x3e;Special:MyLanguage/Help:Tables&#x3c;/&#x3e;|Tables</a></li>
+</ul>
+<p>&lt;!--<a href='T:153--'>T:153--</a>&gt;
+You can find more references at <a href='&#x3c;tvar|help-contents&#x3e;Special:MyLanguage/Help:Contents&#x3c;/&#x3e;|Help:Contents'>&#x3c;tvar|help-contents&#x3e;Special:MyLanguage/Help:Contents&#x3c;/&#x3e;|Help:Contents</a>.
+&lt;/translate&gt;
+<a href='Category:Help{{Langcat|Formatting}}|Formatting'>Category:Help{{Langcat|Formatting}}|Formatting</a></p>
+</div>
+
+</body>
+</html>
