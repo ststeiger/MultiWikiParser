@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -34,6 +34,7 @@
     <Reference Include="IKVM.Runtime">
       <HintPath>Libs\IKVM.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="wem-2.0.6">
       <HintPath>Libs\wem-2.0.6.dll</HintPath>
     </Reference>
@@ -42,12 +43,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestData.cs" />
+    <Compile Include="XhtmlPrinter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Libs\" />
+    <Content Include="test.htm" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Libs\IKVM.Runtime.dll" />
